@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(135deg, #ffd1dc, #e6ddff, #d7f4f1);
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
     color: #3f3f3f;
 }
 
@@ -120,4 +120,75 @@ header p {
 footer {
     font-size: 0.9rem;
     opacity: 0.7;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    .card {
+        max-width: 380px;
+        padding: 36px 30px;
+    }
+
+    .card p {
+        font-size: 1.05rem;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 40px 16px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 32px 24px;
+        border-radius: 24px;
+    }
+
+    .card p {
+        font-size: 1rem;
+        min-height: auto;
+    }
+
+    .card span {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+}
+
+/* Small Mobiles */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        padding: 28px 20px;
+    }
+
+    .floating {
+        display: none;
+    }
 }
